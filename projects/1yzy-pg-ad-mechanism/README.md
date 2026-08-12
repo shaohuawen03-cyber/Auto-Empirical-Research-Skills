@@ -7,6 +7,7 @@
 ```
 projects/1yzy-pg-ad-mechanism/
   README.md
+  VERSIONS.md                     # ★ 版本记录：v0.1–v0.5 + tag + 恢复方法
   SHA256SUMS.txt                  # source-docs 哈希
   ARTIFACT_SHA256SUMS.txt         # 产物哈希
   manuscript/
@@ -66,6 +67,7 @@ projects/1yzy-pg-ad-mechanism/
 ## Git
 
 - 工作分支：`arena/019ff3f9-auto-empirical-research-skills`（当前会话；旧分支 `arena/019ff371-…` 为 v0.1–v0.3 存档）
+- **版本记录与 tag**：`VERSIONS.md`（tag 命名 `1yzy-manuscript-vX.Y`，恢复方法在内）
 - **拉我推上去的更新**：`scripts/SYNC.md`（每次生成后都用这个，不要重新 clone）
 - 上传源稿：`scripts/UPLOAD.md`
-- 本地 tag 示例：`1yzy-manuscript-v0.4`
+- 当前 tag：`1yzy-manuscript-v0.5`

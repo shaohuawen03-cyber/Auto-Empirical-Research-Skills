@@ -3,18 +3,23 @@
   "files": [
     {
       "path": "ARTIFACT_SHA256SUMS.txt",
-      "size": 7222,
-      "sha256": "a50a63e673a5f519b3b9b7bcb28614b8ec5cf1cdc308e38c8acaf4104f6d097e"
+      "size": 7408,
+      "sha256": "b9de7600ec28c9a124a81cad6a3206f16eb704dcb3c166286b87da42031f6b8c"
     },
     {
       "path": "README.md",
-      "size": 3670,
-      "sha256": "e710f4c0bec1d093c226a6c9d26a45e383869958e5fe8f7f1b12abb9998dcdbd"
+      "size": 5397,
+      "sha256": "507ab9810f39e53524604c167572819e91aaf5d51a3e51ccdc1506252d4cd760"
     },
     {
       "path": "SHA256SUMS.txt",
       "size": 741,
       "sha256": "28bfea9d4ce9a856c45c5383d13f48e3fcf2b588a5ac3b59f55d373b4e955251"
+    },
+    {
+      "path": "VERSIONS.md",
+      "size": 4160,
+      "sha256": "c5a47fad511e6e1f3510d05ec99cf6a85accb936b92a56932429dff6fa784046"
     },
     {
       "path": "manuscript/bilingual-sci-review.md",
@@ -163,8 +168,8 @@
     },
     {
       "path": "scripts/SYNC.md",
-      "size": 2113,
-      "sha256": "e235def79d6bdfd2dadb3858930ebe82d3f902edc4cef232927cc6f2c210b192"
+      "size": 2447,
+      "sha256": "e5fc851b99a122fc8a5a7efec019dcb35fe1905fe918c62dbafcc4c352343fe3"
     },
     {
       "path": "scripts/UPLOAD.md",
@@ -315,6 +320,11 @@
       "path": "quality_reports/quality_summary.md",
       "size": 4329,
       "sha256": "e62a54d4459458162adfa0342ff9605ed12303251195500e7c96189235e84bcb"
+    },
+    {
+      "path": "quality_reports/repository_inventory.json",
+      "size": 13778,
+      "sha256": "42fc674882658aa94e7e77a30ef661d47baaf534a1c5281fea32a72f6dffe56b"
     },
     {
       "path": "quality_reports/research_ethics_review.md",

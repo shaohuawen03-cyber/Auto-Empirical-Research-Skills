@@ -40,14 +40,24 @@ git pull origin arena/019ff3f9-auto-empirical-research-skills
 git stash pop
 ```
 
-## 关键路径（v0.4 起）
+## 关键路径（v0.5 起）
 
 | 内容 | 路径 |
 | --- | --- |
-| 英文 SCI 主稿（投稿用） | `projects\1yzy-pg-ad-mechanism\manuscript\sci_v04_en.md` |
-| v0.3 存档（未做对接阶段） | `projects\1yzy-pg-ad-mechanism\manuscript\sci_v03_en.md` |
-| 文献库（含纠错注记） | `projects\1yzy-pg-ad-mechanism\manuscript\references.bib` |
-| 图（fig1–fig5，PDF 为投稿母版） | `projects\1yzy-pg-ad-mechanism\manuscript\figures\` |
-| 技能运行 / 引用核验日志 | `projects\1yzy-pg-ad-mechanism\pipeline\01_skill_run_v04.md` |
-| 投稿信 / Highlights | `projects\1yzy-pg-ad-mechanism\submission\` |
+| **版本记录与恢复方法** | `projects\1yzy-pg-ad-mechanism\VERSIONS.md`（tag 命名 `1yzy-manuscript-vX.Y`） |
+| 英文主稿（投稿用） | `projects\1yzy-pg-ad-mechanism\manuscript\manuscript_en.md` |
+| 中文主稿 | `projects\1yzy-pg-ad-mechanism\manuscript\manuscript_zh.md` |
+| 双语主稿 | `projects\1yzy-pg-ad-mechanism\manuscript\manuscript_bilingual.md/.docx` |
+| 双语补充表 | `projects\1yzy-pg-ad-mechanism\manuscript\supplementary_tables_bilingual.md/.docx` |
+| 九阶段记录 | `projects\1yzy-pg-ad-mechanism\revision_v2\` |
+| 质检汇总 | `projects\1yzy-pg-ad-mechanism\quality_reports\quality_summary.md` |
+| 投稿包 | `projects\1yzy-pg-ad-mechanism\submission\` |
 | 本机上传源稿 | `scripts\UPLOAD.md` |
+
+## 版本 tag 操作（每次新版）
+
+```powershell
+git tag -l "1yzy-manuscript-*"
+git tag -a 1yzy-manuscript-vX.Y -m "1yzy manuscript vX.Y: <说明>"
+git push origin 1yzy-manuscript-vX.Y
+```
