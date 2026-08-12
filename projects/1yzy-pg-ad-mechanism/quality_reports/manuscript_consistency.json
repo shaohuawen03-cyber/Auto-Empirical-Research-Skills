@@ -1,0 +1,21 @@
+{
+  "schema": "local.manuscript_consistency.v1",
+  "english": {
+    "path": "manuscript/manuscript_en.md",
+    "sha256": "81acc8304787792fdd190466981b2c2eff90b6da88ca0205f2f264374f184e37",
+    "missing_expected_values": [],
+    "prohibited_claim_hits": [],
+    "reference_numbers_sequential_1_to_43": true
+  },
+  "chinese": {
+    "path": "manuscript/manuscript_zh.md",
+    "sha256": "f61318b56131f2543fdf3ff40bdd48ca8267c6e97afe7926d74e2d3c320507a8",
+    "missing_expected_values": [],
+    "prohibited_claim_hits": [],
+    "reference_numbers_sequential_1_to_43": true
+  },
+  "core_value_presence_bilingual": true,
+  "prohibited_claims_absent": true,
+  "references_sequential_bilingual": true,
+  "verdict": "PASS"
+}

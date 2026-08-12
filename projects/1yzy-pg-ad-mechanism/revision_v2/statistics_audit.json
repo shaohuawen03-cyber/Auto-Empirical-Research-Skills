@@ -1,0 +1,109 @@
+{
+  "schema": "local.statistics_audit.v1",
+  "boundary": "Aggregate-count transcriptions/recomputations only; no row-level data exists and no inferential test is re-run. The confirmed-library shares (48.25/51.75) follow the author table, which truncates to two decimals; recomputation gives 48.257/51.743 and passes within a 0.011 tolerance.",
+  "checks": {
+    "healthy_passage_pct": {
+      "computed": 0.2796,
+      "manuscript_value": 0.2796,
+      "pass": true
+    },
+    "periodontitis_passage_pct": {
+      "computed": 0.2882,
+      "manuscript_value": 0.2882,
+      "pass": true
+    },
+    "combined_passage_pct": {
+      "computed": 0.284,
+      "manuscript_value": 0.2839,
+      "pass": true
+    },
+    "perio_share_of_confirmed_pct": {
+      "computed": 51.74,
+      "manuscript_value": 51.75,
+      "pass": true
+    },
+    "healthy_short_plus_long": {
+      "computed": 31510,
+      "manuscript_value": 31510,
+      "pass": true
+    },
+    "perio_short_plus_long": {
+      "computed": 33786,
+      "manuscript_value": 33786,
+      "pass": true
+    },
+    "bbb_short_rates_pct": {
+      "computed": [
+        10.99,
+        10.52
+      ],
+      "manuscript_value": [
+        10.99,
+        10.52
+      ],
+      "pass": true
+    },
+    "bbb_long_rates_pct": {
+      "computed": [
+        4.2,
+        6.98
+      ],
+      "manuscript_value": [
+        4.2,
+        6.98
+      ],
+      "pass": true
+    },
+    "bbb_total": {
+      "computed": 3518,
+      "manuscript_value": 3518,
+      "pass": true
+    },
+    "ntx_scored_plus_skipped": {
+      "computed": 3518,
+      "manuscript_value": 3518,
+      "pass": true
+    },
+    "ntx_positive_rate_pct": {
+      "computed": 27.98,
+      "manuscript_value": 27.98,
+      "pass": true
+    },
+    "chel_rate_of_mebi_pct": {
+      "computed": 13.51,
+      "manuscript_value": 13.51,
+      "pass": true
+    },
+    "main_rate_of_mebi_pct": {
+      "computed": 10.81,
+      "manuscript_value": 10.81,
+      "pass": true
+    },
+    "strict_rate_of_mebi_pct": {
+      "computed": 7.21,
+      "manuscript_value": 7.21,
+      "pass": true
+    },
+    "candidate_count": {
+      "computed": 12,
+      "manuscript_value": 12,
+      "pass": true
+    },
+    "docking_score_min": {
+      "computed": -9.6,
+      "manuscript_value": -9.6,
+      "pass": true
+    },
+    "docking_score_max": {
+      "computed": -8.25,
+      "manuscript_value": -8.25,
+      "pass": true
+    },
+    "author_rank_is_nonincreasing_affinity": {
+      "computed": true,
+      "manuscript_value": true,
+      "pass": true
+    }
+  },
+  "all_checks_pass": true
+}

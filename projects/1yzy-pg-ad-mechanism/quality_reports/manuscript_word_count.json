@@ -1,0 +1,9 @@
+{
+  "schema": "local.manuscript_word_count.v1",
+  "source": "manuscript/manuscript_en.md",
+  "structured_abstract_excluding_keywords": 387,
+  "main_text_introduction_through_conclusions": 5220,
+  "main_text_including_declarations_excluding_references": 5471,
+  "counting_boundary": "Journal-neutral regex estimate; recount after target-journal formatting.",
+  "verdict": "INFORMATIONAL"
+}

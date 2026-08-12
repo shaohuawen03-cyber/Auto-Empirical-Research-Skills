@@ -2,18 +2,29 @@
 
 本目录是 Arena 会话分支上的**独立研究文件夹**，不改动仓库 skills 目录。
 
-## 目录
+## 目录（v0.5 投稿包，与 Light-skills `arena/019ff377-light-skills` 规格对齐）
 
 ```
 projects/1yzy-pg-ad-mechanism/
   README.md
-  scripts/upload-local-docs.ps1   # 本机 E:\0writing\1yzy → source-docs → push
-  scripts/UPLOAD.md
-  source-docs/                    # 作者原始 docx/pdf（需本机脚本灌入）
+  SHA256SUMS.txt                  # source-docs 哈希
+  ARTIFACT_SHA256SUMS.txt         # 产物哈希
   manuscript/
-    bilingual-sci-review.md       # 中英对照 SCI 综述（主交付）
-    references.bib
-    figures/
+    manuscript_en.md              # 英文主稿（投稿用，8 节，43 条文献）
+    manuscript_zh.md              # 中文主稿（逐节对应）
+    manuscript_bilingual.md/.docx # 分节对照双语稿（脚本重建）
+    supplementary_tables_bilingual.md/.docx   # 补充表 S1–S5
+    references.bib                # BibTeX（43 条手稿文献的文档化超集）
+    figures/                      # fig1–fig5（PDF 母版 + PNG 预览）
+    sci_v04_en.md / sci_v03_en.md / bilingual-sci-review.md   # 历史版本存档
+  references/verified_references.md   # 43 条核验状态（含两处纠错）
+  evidence/                       # 来源范围、主张–证据台账、排除材料记录
+  revision_v2/                    # 九阶段记录 01–09 + statistics_audit.json
+  quality_reports/                # 审计 JSON + 质量汇总 + 伦理/自审/文献覆盖
+  submission/                     # 双语投稿信/询问/标题页/亮点/选刊/就绪清单
+  pipeline/                       # v0.3、v0.4 技能运行记录（历史）
+  scripts/                        # 审计/构建/绘图脚本（Python 标准库）
+  source-docs/                    # 作者原始 docx/pdf
 ```
 
 ## 使用了哪些 AERS 技能
@@ -29,15 +40,20 @@ projects/1yzy-pg-ad-mechanism/
 | 引用核验（v0.4 新增） | `skills/04-K-Dense-AI-claude-scientific-writer/citation-management`（PubMed/PDB 逐条比对，见 `pipeline/01_skill_run_v04.md`） |
 | 中文降套话 | `skills/48-copaper-ai-chinese-de-aigc`（少四字套话、少段首“此外/因此”、断言降级） |
 
-## 当前主稿（投稿用 v0.4）
+## 当前主稿（投稿用 v0.5）
 
-- **英文 SCI 主稿**：`manuscript/sci_v04_en.md`（v0.3 的引言大幅扩写为六小节；并入作者 12 条主候选序列、PAS 聚焦 Vina 对接结果与后续机制方案；外源毒性肽文献框架（tau26–44/Cu(II) 等）已核验并并入引言）
-- v0.3 主稿 `manuscript/sci_v03_en.md` 降为档案（“未做对接”阶段的历史版本）
-- 流程记录：`pipeline/00_skill_run.md`（v0.3）+ `pipeline/01_skill_run_v04.md`（v0.4 技能清单、引用纠错日志、统计审查）
-- 中文摘要在主稿文内；投稿信 / Highlights：`submission/`
-- 矢量图：`manuscript/figures/fig1_design.pdf` … `fig4_bbb_length.pdf`，v0.4 新增 `fig5_docking_scores.pdf`（脚本 `scripts/fig5_docking_scores.py`）
-- v0.2 双语夹写稿仅作档案：`manuscript/bilingual-sci-review.md`
-- v0.1 不要投稿
+- **英文主稿**：`manuscript/manuscript_en.md`；**中文主稿**：`manuscript/manuscript_zh.md`；**双语对照**：`manuscript/manuscript_bilingual.md/.docx`
+- 九阶段记录：`revision_v2/01–09`；质检汇总：`quality_reports/quality_summary.md`（当前确定性审计全部 PASS）
+- 投稿包：`submission/`（双语六件套 + 就绪清单）；选刊决定权归作者
+- v0.4 及更早（`sci_v04_en.md` 等）仅作历史存档，不要投稿
+
+### v0.5 相对 v0.4 的变化（按 Light-skills 九阶段规格重构）
+
+1. 中英双语完整稿 + 分节对照双语稿 + 双语补充表（S1–S5），DOCX 用标准库脚本构建并通过包审计。
+2. 新增确定性审计链（`scripts/audit_suite_v05.py`）：数值一致、禁用主张、43 条文献序列、DOI 集合平价（EN/ZH/核验表一致；BibTeX 为文档化超集）、8 节结构、DOCX 包完整性；全部 PASS。
+3. 统计独立复算（`revision_v2/statistics_audit.json`，`all_checks_pass=true`；记录 48.25/51.75 的截断舍入口径）。
+4. 证据台账与诚信边界：主张–证据台账 16 条；诚信边界扩至 12 条（新增对接与 MD 两条）；GSE42872 排除记录。
+5. 模拟审稿自审、科研伦理审查、文献覆盖声明、投稿就绪清单。
 
 ### v0.4 新增内容速览
 

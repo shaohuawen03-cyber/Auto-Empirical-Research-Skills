@@ -1,0 +1,405 @@
+{
+  "schema": "local.repository_inventory.v1",
+  "files": [
+    {
+      "path": "ARTIFACT_SHA256SUMS.txt",
+      "size": 7222,
+      "sha256": "a50a63e673a5f519b3b9b7bcb28614b8ec5cf1cdc308e38c8acaf4104f6d097e"
+    },
+    {
+      "path": "README.md",
+      "size": 3670,
+      "sha256": "e710f4c0bec1d093c226a6c9d26a45e383869958e5fe8f7f1b12abb9998dcdbd"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "size": 741,
+      "sha256": "28bfea9d4ce9a856c45c5383d13f48e3fcf2b588a5ac3b59f55d373b4e955251"
+    },
+    {
+      "path": "manuscript/bilingual-sci-review.md",
+      "size": 36916,
+      "sha256": "93676427bd3526d0bad441cb61bdc8e95a9692e002c9436fb2f6969a5be2b289"
+    },
+    {
+      "path": "manuscript/manuscript_bilingual.docx",
+      "size": 51648,
+      "sha256": "989f6c60474cdd53117c133fdf76cbfb3be67cbc79674cc3b43b2a30333e7b6d"
+    },
+    {
+      "path": "manuscript/manuscript_bilingual.md",
+      "size": 85724,
+      "sha256": "49b4e72f2697e549c8404fa67c5b0623222a884adb1d0ba600bc49b0904a2eae"
+    },
+    {
+      "path": "manuscript/manuscript_en.md",
+      "size": 50897,
+      "sha256": "81acc8304787792fdd190466981b2c2eff90b6da88ca0205f2f264374f184e37"
+    },
+    {
+      "path": "manuscript/manuscript_zh.md",
+      "size": 43793,
+      "sha256": "f61318b56131f2543fdf3ff40bdd48ca8267c6e97afe7926d74e2d3c320507a8"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "size": 22348,
+      "sha256": "ef0d7b899f9330695b1928c785016b283cec6d51c3dac729acfcf1a8f42ddc73"
+    },
+    {
+      "path": "manuscript/sci_v03_en.md",
+      "size": 26657,
+      "sha256": "280ac79fac65c55c8f888696c2c5b9b163107bf2c74643d5cbcc96cd0b37b8e1"
+    },
+    {
+      "path": "manuscript/sci_v04_en.md",
+      "size": 57315,
+      "sha256": "1fb810458373e7d0a95403394b4a05d4e0b4cb19c1ad95a8626023ca4110efad"
+    },
+    {
+      "path": "manuscript/supplementary_tables_bilingual.docx",
+      "size": 10847,
+      "sha256": "648f1634928354a654213eff1e8bb3dcc2695e11e9d136fcfcb2838b0f26e800"
+    },
+    {
+      "path": "manuscript/supplementary_tables_bilingual.md",
+      "size": 7456,
+      "sha256": "83cdae8aa88449d5ce198158babc0da119b040f4a471bf781bb41eb691dedfb2"
+    },
+    {
+      "path": "manuscript/figures/fig1_design.pdf",
+      "size": 19545,
+      "sha256": "534bd2359399613a0fece52607c5e1a9f92cbee51985a0db24e53adb270f6961"
+    },
+    {
+      "path": "manuscript/figures/fig1_design.png",
+      "size": 136597,
+      "sha256": "75808680764e4ee2a9a4ddded1e619060b84279e4ac0e43fa8a6b9bd4dd0b73f"
+    },
+    {
+      "path": "manuscript/figures/fig1_graphical_abstract.png",
+      "size": 1821408,
+      "sha256": "b234e751b96faaeadcd1794e0a6d8e9d0c95399136df28bc2e8fcfbf7f5fe869"
+    },
+    {
+      "path": "manuscript/figures/fig2_long_functions.pdf",
+      "size": 24581,
+      "sha256": "fad6397faffd6842d5394d507c03ab60816dba5d4686dface07e13ea7768e6d2"
+    },
+    {
+      "path": "manuscript/figures/fig2_long_functions.png",
+      "size": 171337,
+      "sha256": "89da15c6b2b94d02cff7ac211f8de85438fc15e9d6df8d29bad3916e02cb9006"
+    },
+    {
+      "path": "manuscript/figures/fig2_methods_pipeline.png",
+      "size": 1442801,
+      "sha256": "021e9002347245c538b046b558066707bb7dc9015203ab0f03707f556c548e7a"
+    },
+    {
+      "path": "manuscript/figures/fig2b_short_counts.pdf",
+      "size": 23233,
+      "sha256": "c7406945362526cfc25975c60ed9d85191db9b1b1317bf13f51a326ea282a5f5"
+    },
+    {
+      "path": "manuscript/figures/fig2b_short_counts.png",
+      "size": 112440,
+      "sha256": "af2b43ff23335356337dbc6264f7a611322eb9aa9c8aef86d9c6e2e5378f0207"
+    },
+    {
+      "path": "manuscript/figures/fig3_funnel.pdf",
+      "size": 25087,
+      "sha256": "e97fdb6509b30bdd213f321c64cfcaab3952ac415da3a68bacfce243387f69dd"
+    },
+    {
+      "path": "manuscript/figures/fig3_funnel.png",
+      "size": 205578,
+      "sha256": "6e2ec217b230f1a2ed9554dcf5e0eaf61930d7a13453160c78f222063b524ab3"
+    },
+    {
+      "path": "manuscript/figures/fig3_mechanism_map.png",
+      "size": 1474372,
+      "sha256": "26e30f21c5604d108e1140244f07b1faebc291aa25c408a5cd47f95f138daa45"
+    },
+    {
+      "path": "manuscript/figures/fig4_ache_ab_interface.png",
+      "size": 2194344,
+      "sha256": "188817338e462afed0fbba2b50846724ab0b64191ffcccd08150383f7a5fc84a"
+    },
+    {
+      "path": "manuscript/figures/fig4_bbb_length.pdf",
+      "size": 17431,
+      "sha256": "48c2ea8a7803b1a48ec2308ba3543561a1effb3f44e019811e15406ef70ab8fa"
+    },
+    {
+      "path": "manuscript/figures/fig4_bbb_length.png",
+      "size": 108786,
+      "sha256": "63b86aef0719fa893239b370559d60b674ea1d579698abf7067c9972bdc1045e"
+    },
+    {
+      "path": "manuscript/figures/fig5_docking_scores.pdf",
+      "size": 20110,
+      "sha256": "3c9212380f59addb71646c5d09a2881427f3414e3d48903f1b7c7946f7c0bca9"
+    },
+    {
+      "path": "manuscript/figures/fig5_docking_scores.png",
+      "size": 110876,
+      "sha256": "44c567ea8ec77e47f3ff690490e40b9474b07aa09f87508632ca8be89d249614"
+    },
+    {
+      "path": "manuscript/figures/fig5_screening_funnel.png",
+      "size": 1112121,
+      "sha256": "91ca7006c92cae6945c8552e53499412cc0b96b407eee4830e435f2d8cd0b8d8"
+    },
+    {
+      "path": "pipeline/00_skill_run.md",
+      "size": 2639,
+      "sha256": "b927072539263612462d9728a4f84f2da4a32ba21c17189bd95d46bb4d4d7fc7"
+    },
+    {
+      "path": "pipeline/01_skill_run_v04.md",
+      "size": 5082,
+      "sha256": "2946ad8a3528c3348faa89cfc0e8e083fcf34220bb438a48e87a70c7aaabec99"
+    },
+    {
+      "path": "scripts/SYNC.md",
+      "size": 2113,
+      "sha256": "e235def79d6bdfd2dadb3858930ebe82d3f902edc4cef232927cc6f2c210b192"
+    },
+    {
+      "path": "scripts/UPLOAD.md",
+      "size": 3189,
+      "sha256": "d42be58091776635bb03a126a6a0a836167a956af78a64c7a543ef891bf5b0db"
+    },
+    {
+      "path": "scripts/audit_suite_v05.py",
+      "size": 10784,
+      "sha256": "da83332304aa4d54038165af59d1f88644626400369866a8c3ba56f1956fc547"
+    },
+    {
+      "path": "scripts/build_bilingual_markdown.py",
+      "size": 3369,
+      "sha256": "61220fad067d609a62c7174fa69488421cda9b069fade1770341f6a7ad337d7a"
+    },
+    {
+      "path": "scripts/build_docx_stdlib.py",
+      "size": 21239,
+      "sha256": "3eb7c12052af0023acc9ee001dc27a6e4d9694857438b0bd1b9256ff2b89fde7"
+    },
+    {
+      "path": "scripts/fig5_docking_scores.py",
+      "size": 2314,
+      "sha256": "fa07a6a8b60bc54d7ecd972f1409e5d0baf6278183acb30a688731dc5236ef40"
+    },
+    {
+      "path": "scripts/stage5_statistics_audit.py",
+      "size": 3661,
+      "sha256": "ee6c4afd705fa36f659c7da6c1a606f6e13daee580549a769df102580edb2d38"
+    },
+    {
+      "path": "scripts/upload-local-docs.bat",
+      "size": 759,
+      "sha256": "684acd2698d806f9c1365c6fd6c4df5b7d81d39e1d1eba49cc38ec1951a5db72"
+    },
+    {
+      "path": "scripts/upload-local-docs.ps1",
+      "size": 4776,
+      "sha256": "52aee6e1cf62c0c77c3f05851a149fff28686342f0cc44788e58c6ff28915b9c"
+    },
+    {
+      "path": "source-docs/.gitignore",
+      "size": 12,
+      "sha256": "4ee8b6b5791276170fd9ccb89b17ee057384169f9e27725cd8c54941c0eaa8b9"
+    },
+    {
+      "path": "source-docs/GSE42872_代码方法.docx",
+      "size": 792107,
+      "sha256": "310e0e7e560c72dfbafafa780058e8339071a8142fd0ef705657b011ffe1c14b"
+    },
+    {
+      "path": "source-docs/GSE42872_论文.docx",
+      "size": 939140,
+      "sha256": "fbee046b4eef0b23bd914ef7a7a5962d0cd46f77882054f52e14e0ef389fa262"
+    },
+    {
+      "path": "source-docs/README.md",
+      "size": 1022,
+      "sha256": "948d4dcab31289371a1354e065a366285af8a94863f7811526eaa73d6939a99b"
+    },
+    {
+      "path": "source-docs/乙酰胆碱酯酶-β-淀粉样肽复合物分子动力学模拟_中文翻译.docx",
+      "size": 44790,
+      "sha256": "f6d0093f261b012fa186a4500d5efcf6f88279ee4b90bf5918f7b8c74c0a00fb"
+    },
+    {
+      "path": "source-docs/材料与方法及结果_机制研究版.docx",
+      "size": 335541,
+      "sha256": "f4132a02cb9955c808739c3cbf15edd947f6203d577e8586490933a5d2daa4b5"
+    },
+    {
+      "path": "source-docs/材料与方法及结果_机制研究版.pdf",
+      "size": 560727,
+      "sha256": "88fba5ccd1f8cfab01a9555adb404400e390760ef134ee9a7e3393a616a76ce1"
+    },
+    {
+      "path": "source-docs/牙龈卟啉单胞菌肽与AD关联综述.docx",
+      "size": 45169,
+      "sha256": "3e1dfc501472d50307b5f66bb8df1c6cc8a64e9371b97a7dc0ca1ad08ce81ec6"
+    },
+    {
+      "path": "submission/cover_letter_bilingual_template.md",
+      "size": 2327,
+      "sha256": "14c4dab04aefed8ffe24516427073fba315b2b1d517314bba4240f00aae6ec90"
+    },
+    {
+      "path": "submission/highlights_bilingual.md",
+      "size": 1086,
+      "sha256": "e71b0c9b0dac57de737be86b4f1e39c443a68961ad2b759795317694794cfbf0"
+    },
+    {
+      "path": "submission/journal_targeting_bilingual.md",
+      "size": 1711,
+      "sha256": "4fab16ec82e0c4691ae51f4cd53ca3c19a75822562f28f16fd7a865e889e29a7"
+    },
+    {
+      "path": "submission/presubmission_enquiry_bilingual.md",
+      "size": 2476,
+      "sha256": "afcd2ce38ac9e8938a608f8217afce05ba2472618af50644a50bb11d9becb824"
+    },
+    {
+      "path": "submission/submission_readiness_checklist.md",
+      "size": 2852,
+      "sha256": "f050820cdf9963e5fa4ddeb302cfd4c0c0929dc44a8c11bbe67668af25284a88"
+    },
+    {
+      "path": "submission/title_page_bilingual_template.md",
+      "size": 1447,
+      "sha256": "ee8653183372934f10e3b7fa4e14281f6c7246c9fe4d6833e6c7259d65607e9a"
+    },
+    {
+      "path": "references/verified_references.md",
+      "size": 5838,
+      "sha256": "6c156bbf3b737f7b10c5e621f8165840cb85366d0c930b2b959406c2f5d85200"
+    },
+    {
+      "path": "quality_reports/citation_inventory_audit.json",
+      "size": 639,
+      "sha256": "ed5f2a14a09b4d932e3eb9b3f6912afd62a74d1521038c2fd3bc003f61e6535d"
+    },
+    {
+      "path": "quality_reports/docx_package_audit.json",
+      "size": 922,
+      "sha256": "b7dc6317f63474fcf5515f3eb7155a1ba2f55572aa468bd2d141b4747ab562f8"
+    },
+    {
+      "path": "quality_reports/language_structure_audit.json",
+      "size": 1670,
+      "sha256": "cd342317050afd8c1233b2d765050484a96daddc6395299a1e74407169e95819"
+    },
+    {
+      "path": "quality_reports/literature_coverage.md",
+      "size": 1338,
+      "sha256": "97c31de6b6d414b5921e54565d904d8d21b6127103ccd3a8f367d071a96f68fb"
+    },
+    {
+      "path": "quality_reports/manuscript_consistency.json",
+      "size": 715,
+      "sha256": "4654a9b252d092e8e50641358b02ac7285cdc34eb3f007dd99ba4162059dbddf"
+    },
+    {
+      "path": "quality_reports/manuscript_word_count.json",
+      "size": 389,
+      "sha256": "0994c9b5c60d7af0a5c7a497e3018dcafac5ee1f9e0be2e360e7c5ec07c76497"
+    },
+    {
+      "path": "quality_reports/quality_summary.md",
+      "size": 4329,
+      "sha256": "e62a54d4459458162adfa0342ff9605ed12303251195500e7c96189235e84bcb"
+    },
+    {
+      "path": "quality_reports/research_ethics_review.md",
+      "size": 1449,
+      "sha256": "caa8d4066692b84aab23f1f444bac881999104008725b82d98b4bf95ac49b476"
+    },
+    {
+      "path": "quality_reports/reviewer_self_review.md",
+      "size": 2085,
+      "sha256": "c6ef067a0679279a6061cec803af3b6cd5876838cf7dd3cab8c4d589bc6ebf48"
+    },
+    {
+      "path": "revision_v2/01_topic_brainstorming.md",
+      "size": 1609,
+      "sha256": "e72d272df90bd22e68781d1e6f988eef2ccad7dea12e6b21a45391359d17e306"
+    },
+    {
+      "path": "revision_v2/02_literature_search_and_novelty.md",
+      "size": 2508,
+      "sha256": "09ec7febcffc27ae895e960938aaa294bef2c1c0d80d291d12fa7575f2286ef6"
+    },
+    {
+      "path": "revision_v2/03_literature_review_and_evidence_synthesis.md",
+      "size": 1915,
+      "sha256": "8ba8c2abc24527203187ce9697dadd313fb509495d0243e3e5f1dd1a1fd97384"
+    },
+    {
+      "path": "revision_v2/04_research_suite_coordination.md",
+      "size": 1631,
+      "sha256": "e1b0594210845d94fdd9e2f9a59ed4265a0b19836a3a9010152ae756dc5c22b7"
+    },
+    {
+      "path": "revision_v2/05_statistics_review.md",
+      "size": 1307,
+      "sha256": "307fe55932d724fcc70c624bb6719b98dd14cf11a233559968911cc49c7bd7c2"
+    },
+    {
+      "path": "revision_v2/06_scientific_visualization.md",
+      "size": 1122,
+      "sha256": "13b40b1b55c96b8fff0d7aad172652fc5fc6115362c695c44abba6ad9a403bba"
+    },
+    {
+      "path": "revision_v2/07_nature_writing_rebuild.md",
+      "size": 1505,
+      "sha256": "b3c424bbee8a5526ac389c4076461e03b1cde992aa8882d53881824b743b72cf"
+    },
+    {
+      "path": "revision_v2/08_language_polishing.md",
+      "size": 1152,
+      "sha256": "176d8cb29410ef99fccf76c42996ad17f65e552a81c561f0cb925f6f587252a1"
+    },
+    {
+      "path": "revision_v2/09_submission_preparation.md",
+      "size": 1371,
+      "sha256": "7d5598efbf98ebeb81ae037b25ed9d6c119ee08992e17e08a4ef8822ed75f3a7"
+    },
+    {
+      "path": "revision_v2/README.md",
+      "size": 1405,
+      "sha256": "a3c0256273dd8c4d84921b83d8fdcd5b74873b45008d877fd9d82525f492d087"
+    },
+    {
+      "path": "revision_v2/SKILL_PROVENANCE.md",
+      "size": 1775,
+      "sha256": "281864a75445ac84260e0812529df7162f5dde9391a1d30e74899f5f486d7d63"
+    },
+    {
+      "path": "revision_v2/statistics_audit.json",
+      "size": 2574,
+      "sha256": "a9b49952d5b8bef0db88579accb1c890428ab6e70a35bc36e72b55b43407a1ab"
+    },
+    {
+      "path": "evidence/claim_evidence_ledger.md",
+      "size": 2682,
+      "sha256": "6ed731d7d58883c15f40717046df56a24742a4f5c4e74b918f3ffa276619304b"
+    },
+    {
+      "path": "evidence/excluded_source_record.md",
+      "size": 1259,
+      "sha256": "f33df2e5917e123c4dc89de55010bb4e0084fb14319b049807e8537da289ee32"
+    },
+    {
+      "path": "evidence/source_understanding_and_scope.md",
+      "size": 1616,
+      "sha256": "addd434747525c63040c1a458e58ff430da2b25c5c1819dfd863960d7abc84b8"
+    }
+  ]
+}

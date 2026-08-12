@@ -1,0 +1,27 @@
+{
+  "schema": "local.docx_package_audit.v1",
+  "packages": {
+    "manuscript_bilingual.docx": {
+      "path": "manuscript/manuscript_bilingual.docx",
+      "sha256": "989f6c60474cdd53117c133fdf76cbfb3be67cbc79674cc3b43b2a30333e7b6d",
+      "zip_crc_ok": true,
+      "document_xml_parses": true,
+      "paragraph_count": 713,
+      "table_count": 10,
+      "drawing_count": 0,
+      "media_files": []
+    },
+    "supplementary_tables_bilingual.docx": {
+      "path": "manuscript/supplementary_tables_bilingual.docx",
+      "sha256": "648f1634928354a654213eff1e8bb3dcc2695e11e9d136fcfcb2838b0f26e800",
+      "zip_crc_ok": true,
+      "document_xml_parses": true,
+      "paragraph_count": 337,
+      "table_count": 5,
+      "drawing_count": 0,
+      "media_files": []
+    }
+  },
+  "rendering_boundary": "No Word/LibreOffice renderer in this environment; page-level visual review is the author's task.",
+  "verdict": "PASS"
+}

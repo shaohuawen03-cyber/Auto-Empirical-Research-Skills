@@ -1,0 +1,19 @@
+{
+  "schema": "local.citation_inventory_audit.v1",
+  "canonical_count": 43,
+  "canonical_count_is_43": true,
+  "english_chinese_doi_parity": true,
+  "verified_references_parity": true,
+  "bibtex_is_superset_of_manuscript_dois": true,
+  "bibtex_extra_dois_not_cited_in_manuscript": [
+    "10.1016/j.ica.2017.12.012",
+    "10.1038/s41598-019-48745-0",
+    "10.1073/pnas.0709259105",
+    "10.1136/bmj.n71",
+    "10.3389/fcimb.2026.1761068",
+    "10.3389/fcimb.2026.1761068/full",
+    "10.3390/ijms24065432"
+  ],
+  "verification_boundary": "Inventory parity only; final Crossmark/retraction screening remains required.",
+  "verdict": "PASS"
+}
