@@ -12,21 +12,35 @@
 4. `git add` / `commit` / `push origin arena/019ff371-auto-empirical-research-skills`
 5. 你在本地按质量打 tag
 
-## 一条命令（推荐）
+## Spyder / 本机终端：不要套一层 `powershell -File`，也不要反引号换行
 
-在本仓库根目录打开 PowerShell：
+Spyder 的 `(base) PS` 已经是 PowerShell。再写 `powershell -File ...` 加反引号换行，经常会吞掉输出，看起来像没执行。下面每一行单独回车。
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\projects\1yzy-pg-ad-mechanism\scripts\upload-local-docs.ps1
-```
-
-源目录或克隆路径不同时：
+先确认分支和源目录（应看到 `arena/019ff371-...` 和 6 个本地文件）：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\projects\1yzy-pg-ad-mechanism\scripts\upload-local-docs.ps1 `
-  -SourceDir "E:\0writing\1yzy" `
-  -RepoRoot "E:\code\Auto-Empirical-Research-Skills"
+cd E:\0writing\Auto-Empirical-Research-Skills
+git fetch origin
+git checkout arena/019ff371-auto-empirical-research-skills
+git pull origin arena/019ff371-auto-empirical-research-skills
+git branch --show-current
+dir E:\0writing\1yzy
+dir .\projects\1yzy-pg-ad-mechanism
 ```
+
+再复制、提交、推送（仍是一行一条，不要反引号）：
+
+```powershell
+New-Item -ItemType Directory -Force -Path .\projects\1yzy-pg-ad-mechanism\source-docs | Out-Null
+Copy-Item -Path E:\0writing\1yzy\* -Destination .\projects\1yzy-pg-ad-mechanism\source-docs\ -Force
+dir .\projects\1yzy-pg-ad-mechanism\source-docs
+git add projects/1yzy-pg-ad-mechanism/source-docs
+git status
+git commit -m "docs(1yzy): ingest local source manuscripts from E:/0writing/1yzy"
+git push origin arena/019ff371-auto-empirical-research-skills
+```
+
+也可以双击或直接运行 `.\projects\1yzy-pg-ad-mechanism\scripts\upload-local-docs.bat`（只负责复制和 `git add`，commit/push 仍要你自己回车确认）。
 
 ## 手敲等价命令
 
