@@ -1,32 +1,53 @@
-# 每次远程更新后：本机这样拉（Spyder 一行一条）
+# 每次生成结束后：同步代码（本机一行一条，Spyder / PowerShell 均可）
 
-仓库已在 `E:\0writing\Auto-Empirical-Research-Skills` 时，**不要重新 clone**，只 pull：
+> 当前会话分支：`arena/019ff3f9-auto-empirical-research-skills`（2026-08-12 起，v0.4 主稿）  
+> 旧分支 `arena/019ff371-auto-empirical-research-skills`（v0.1–v0.3）已归档，不要再拉它。
+
+## 仓库已在 `E:\0writing\Auto-Empirical-Research-Skills` 时（不要重新 clone，只 pull）
 
 ```powershell
 cd E:\0writing\Auto-Empirical-Research-Skills
 git fetch origin
-git checkout arena/019ff371-auto-empirical-research-skills
-git pull origin arena/019ff371-auto-empirical-research-skills
+git checkout arena/019ff3f9-auto-empirical-research-skills
+git pull origin arena/019ff3f9-auto-empirical-research-skills
 git log -1 --oneline
 dir .\projects\1yzy-pg-ad-mechanism\manuscript
 ```
 
-还没有克隆时：
+## 还没有克隆过时
 
 ```powershell
 cd E:\0writing
 git clone https://github.com/shaohuawen03-cyber/Auto-Empirical-Research-Skills.git
 cd Auto-Empirical-Research-Skills
-git checkout arena/019ff371-auto-empirical-research-skills
+git checkout arena/019ff3f9-auto-empirical-research-skills
 ```
 
-若 HTTPS 再 403，沿用 Light-skills 那把 SSH 钥匙（已配过可跳过 `git config`）：
+## 若 HTTPS 又 403，换 SSH（沿用 Light-skills 那把钥匙，已配过可跳过 `git config`）
 
 ```powershell
 git remote set-url origin ssh://git@ssh.github.com:443/shaohuawen03-cyber/Auto-Empirical-Research-Skills.git
-git pull origin arena/019ff371-auto-empirical-research-skills
+git pull origin arena/019ff3f9-auto-empirical-research-skills
 ```
 
-主稿路径：
+## 本地改过文件、想先保住再拉
 
-`projects\1yzy-pg-ad-mechanism\manuscript\bilingual-sci-review.md`
+```powershell
+cd E:\0writing\Auto-Empirical-Research-Skills
+git status
+git stash push -m "local-notes"
+git pull origin arena/019ff3f9-auto-empirical-research-skills
+git stash pop
+```
+
+## 关键路径（v0.4 起）
+
+| 内容 | 路径 |
+| --- | --- |
+| 英文 SCI 主稿（投稿用） | `projects\1yzy-pg-ad-mechanism\manuscript\sci_v04_en.md` |
+| v0.3 存档（未做对接阶段） | `projects\1yzy-pg-ad-mechanism\manuscript\sci_v03_en.md` |
+| 文献库（含纠错注记） | `projects\1yzy-pg-ad-mechanism\manuscript\references.bib` |
+| 图（fig1–fig5，PDF 为投稿母版） | `projects\1yzy-pg-ad-mechanism\manuscript\figures\` |
+| 技能运行 / 引用核验日志 | `projects\1yzy-pg-ad-mechanism\pipeline\01_skill_run_v04.md` |
+| 投稿信 / Highlights | `projects\1yzy-pg-ad-mechanism\submission\` |
+| 本机上传源稿 | `scripts\UPLOAD.md` |
