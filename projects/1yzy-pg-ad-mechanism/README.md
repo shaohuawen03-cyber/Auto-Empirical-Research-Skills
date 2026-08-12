@@ -28,14 +28,17 @@ projects/1yzy-pg-ad-mechanism/
 | 英文稿 | `skills/04-K-Dense-AI-claude-scientific-writer/scientific-writing` 与 `skills/03-K-Dense-AI-claude-scientific-skills/scientific-writing`（IMRAD、整段散文、图表） |
 | 中文降套话 | `skills/48-copaper-ai-chinese-de-aigc`（少四字套话、少段首“此外/因此”、断言降级） |
 
-## 写作边界（请先读）
+## 当前主稿
 
-沙箱里**没有** `材料与方法及结果_机制研究版` 的正文与数字。本稿把该文件的**体例**（方法 → 结果 → 机制解释）作为骨架，证据只引用已核实的公开文献与 GEO 记录。作者本机数字、图、代码灌入 `source-docs/` 后，应用那些原始结果替换第 3 节中的“文献重建”段落，而不是把重建值写成自己的实验。
+- **v0.2（以你的机制稿数字为准）**：`manuscript/bilingual-sci-review.md`
+- 漏斗图：`manuscript/figures/fig5_screening_funnel.png`
+- v0.1 是源稿入库前的误构（GSE42872 / 已发表 AChE–Aβ MD），不要投稿；只留在 git 历史里
 
-GSE42872 在 GEO 中是黑色素瘤维莫非尼实验，见 `source-docs/README.md`。
+源稿已在 `source-docs/`。GSE42872 是黑色素瘤维莫非尼再分析，不是 AD 结果。AChE–Aβ 中译是下一阶段对接位点的文献，不是本阶段结果。
 
 ## Git
 
 - 工作分支：`arena/019ff371-auto-empirical-research-skills`
-- 上传源稿：见 `scripts/UPLOAD.md`
-- 本地 tag：你看过 `manuscript/bilingual-sci-review.md` 后再打，例如 `1yzy-manuscript-v0.1`
+- **拉我推上去的更新**：`scripts/SYNC.md`（每次生成后都用这个，不要重新 clone）
+- 上传源稿：`scripts/UPLOAD.md`
+- 本地 tag 示例：`1yzy-manuscript-v0.2`
