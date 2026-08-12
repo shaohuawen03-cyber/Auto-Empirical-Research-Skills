@@ -28,11 +28,14 @@ projects/1yzy-pg-ad-mechanism/
 | 英文稿 | `skills/04-K-Dense-AI-claude-scientific-writer/scientific-writing` 与 `skills/03-K-Dense-AI-claude-scientific-skills/scientific-writing`（IMRAD、整段散文、图表） |
 | 中文降套话 | `skills/48-copaper-ai-chinese-de-aigc`（少四字套话、少段首“此外/因此”、断言降级） |
 
-## 当前主稿
+## 当前主稿（投稿用 v0.3）
 
-- **v0.2（以你的机制稿数字为准）**：`manuscript/bilingual-sci-review.md`
-- 漏斗图：`manuscript/figures/fig5_screening_funnel.png`
-- v0.1 是源稿入库前的误构（GSE42872 / 已发表 AChE–Aβ MD），不要投稿；只留在 git 历史里
+- **英文 SCI 主稿**：`manuscript/sci_v03_en.md`（Nature-writing IMRaD，不再中英夹写）
+- 中文摘要在主稿文内；流程与统计审查：`pipeline/00_skill_run.md`
+- 投稿信 / Highlights：`submission/`
+- 矢量图：`manuscript/figures/fig1_design.pdf` … `fig4_bbb_length.pdf`
+- v0.2 双语夹写稿仅作档案：`manuscript/bilingual-sci-review.md`
+- v0.1 不要投稿
 
 源稿已在 `source-docs/`。GSE42872 是黑色素瘤维莫非尼再分析，不是 AD 结果。AChE–Aβ 中译是下一阶段对接位点的文献，不是本阶段结果。
 
