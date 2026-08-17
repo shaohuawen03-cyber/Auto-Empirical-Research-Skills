@@ -6,18 +6,9 @@
 
 Dear Editor,
 
-Please consider our manuscript, “A Proteome-Supported Screen of Periodontitis-Associated Oral sORF Peptides
-Yields Twelve Metal-Binding, Barrier-Passing Candidates That Dock to the Pathogenic Peripheral Anionic Site
-of Human Acetylcholinesterase.”
+Please consider our manuscript, “Proteome-supported screening of periodontitis-associated peptides encoded by small open reading frames identifies candidates with predicted metal binding, blood–brain barrier permeability and acetylcholinesterase docking potential.”
 
-Periodontitis is linked to Alzheimer’s disease, but molecular accounts stop at cells, gingipains or vesicles.
-We count the missing peptide cargo: a proteome-supported screen of 296 oral MAGs (24 healthy vs 26 periodontitis
-donors) reduces 11.7 M periodontitis sORFs to 33,786 proteome-supported peptides and, through BBB /
-neurotoxicity / metal / chelator-high–scavenger-low filters, to twelve 7–9-residue candidates. PAS-focused
-docking against human AChE (PDB 4EY6) shows all twelve occupying the Aβ-accelerating PAS–gorge interface
-(Vina −8.25 to −9.60 kcal/mol; ranking, not affinity). We report an attempted 100-ns MD check as excluded
-after pressure instabilities, and state the wet-assay cascade that alone can promote any candidate to a
-mechanistic claim. The work has not been published or submitted elsewhere.
+Periodontitis is linked to Alzheimer’s disease, but molecular accounts usually focus on cells, gingipains or vesicles. We examine a less characterised peptide layer: a proteome-supported screen of 296 oral MAGs reduces 11.7 million periodontitis-associated sORFs to 33,786 proteome-matched peptides and, through sequential BBB, neurotoxicity, metal-binding and chelator/scavenger filters, to 12 primary 7–9-residue candidates. PAS-focused AutoDock Vina analysis against human AChE (PDB 4EY6) provides a descriptive within-set ranking (reported scores −8.25 to −9.60 kcal/mol) and qualitative structural hypotheses, not affinity measurements. We report the unsuccessful MD attempt without deriving trajectory-based conclusions and define the experimental assays required before mechanistic interpretation. The work has not been published or submitted elsewhere.
 
 Sincerely,
 [Corresponding author, affiliation, ORCID — `AUTHOR_INPUT_NEEDED`]
@@ -26,14 +17,9 @@ Sincerely,
 
 尊敬的编辑：
 
-请审阅我们的稿件《牙周炎相关口腔 sORF 肽的蛋白质组支持筛选：十二条金属结合、可过屏障候选多肽对接人
-乙酰胆碱酯酶致病性外周阴离子位点》。
+请审阅我们的稿件《牙周炎相关小开放阅读框编码肽的蛋白质组支持筛选：具有预测金属结合、血脑屏障通透性和乙酰胆碱酯酶对接潜力的候选肽》。
 
-牙周炎与阿尔茨海默病相关，但分子叙述多止步于菌体、牙龈蛋白酶或囊泡。我们清点缺失的肽货物：296 个口腔
-MAG（24 健康对 26 牙周炎供体）的蛋白质组支持筛选把 1170 万条牙周炎 sORF 缩减为 33,786 条支持肽，再经
-BBB/神经毒性/金属/螯合高-清除低过滤得到十二条 7–9 残基候选。对人 AChE（PDB 4EY6）的 PAS 聚焦对接显示
-十二条全部占据加速 Aβ 的 PAS–峡部界面（Vina −8.25 至 −9.60 kcal/mol；排序而非亲和力）。我们把已尝试的
-100 ns MD 核查如实报告为排除，并写明唯一能把候选升格为机制结论的湿实验级联。本工作未发表、未一稿多投。
+牙周炎与阿尔茨海默病相关，但分子叙述通常聚焦于菌体、牙龈蛋白酶或囊泡。本研究考察较少被表征的肽层面：对 296 个口腔 MAG 进行蛋白质组支持筛选，将 1170 万条牙周炎相关 sORF 缩减为 33,786 条蛋白质组匹配肽，再经 BBB、神经毒性、金属结合及螯合/清除规则筛选得到 12 条 7–9 残基主候选。针对人 AChE（PDB 4EY6）的 PAS 聚焦 AutoDock Vina 分析提供集合内描述性排序（报告分值 −8.25 至 −9.60 kcal/mol）和定性结构假设，而非亲和力测量。我们如实报告未成功的 MD 尝试，不作任何轨迹结论，并明确机制解释前所需的实验验证。本工作未发表、未一稿多投。
 
 此致
 [通讯作者、单位、ORCID — `AUTHOR_INPUT_NEEDED`]

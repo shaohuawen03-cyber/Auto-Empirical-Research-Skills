@@ -25,7 +25,8 @@ Status: **TECHNICAL PACKAGE READY FOR AUTHOR REVIEW; ADMINISTRATIVE + PARTIAL TE
 - [ ] Software versions/seeds: UniDL4BioPep, NTxPred2, mebipred, AnOxPePred.
 - [ ] Docking parameters: exhaustiveness, run count, seeds, receptor/ligand preparation toolchain.
 - [ ] The 8-of-12 strict-subset membership labels.
-- [ ] Ref 23 (Frontiers 2026) author line confirmed; refs 31/42 full author lines confirmed; Crossmark/retraction screening for all 43 refs.
+- [x] Ref 23 (Frontiers 2026), ref 31 (van Heesch 2019) and ref 33 (Belstrøm 2021) metadata corrected/confirmed on 2026-08-17.
+- [ ] Final Crossmark/retraction screening for the 42-reference SCI submission list.
 - [ ] Data/Code Availability and AI-use disclosure final approval.
 
 ## C. Scientific blockers (not fixable by editing) / 科学阻断项

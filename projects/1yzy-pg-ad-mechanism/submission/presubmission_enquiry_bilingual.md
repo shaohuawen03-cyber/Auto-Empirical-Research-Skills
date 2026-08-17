@@ -6,17 +6,9 @@
 
 Dear Editor,
 
-We are preparing an original computational research article titled “A Proteome-Supported Screen of
-Periodontitis-Associated Oral sORF Peptides Yields Twelve Metal-Binding, Barrier-Passing Candidates That
-Dock to the Pathogenic Peripheral Anionic Site of Human Acetylcholinesterase.”
+We are preparing an original computational research article titled “Proteome-supported screening of periodontitis-associated peptides encoded by small open reading frames identifies candidates with predicted metal binding, blood–brain barrier permeability and acetylcholinesterase docking potential.”
 
-In brief: a periodontitis-associated sORF library (296 MAGs; 24 healthy vs 26 periodontitis donors) is
-collapsed against oral proteomes (11.7 M → 33,786 peptides) and filtered through UniDL4BioPep (BBB),
-NTxPred2, mebipred and AnOxPePred to a 12-peptide (8-peptide) shortlist. All twelve 7–9-mers are now
-sequenced in the manuscript and docked with AutoDock Vina 1.2.5 against human AChE (PDB 4EY6), occupying
-the PAS–gorge interface (−8.25 to −9.60 kcal/mol) that accelerates Aβ fibril assembly. The paper is
-explicitly bounded: docking ranks, it does not certify; an attempted 100-ns MD check is reported as
-excluded; experimental validation is a stated roadmap with a stopping rule.
+In brief, a periodontitis-associated sORF library derived from 296 MAGs was matched against oral proteome resources (11.7 million → 33,786 peptides) and filtered with UniDL4BioPep (BBB), NTxPred2, mebipred and AnOxPePred to a 12-peptide primary shortlist (8 at the stricter aggregate threshold). The 12 sequences are reported and evaluated by PAS-centred AutoDock Vina 1.2.5 analysis against human AChE (PDB 4EY6). The resulting −8.25 to −9.60 kcal/mol scores are presented only as a descriptive within-set pose ranking; qualitative PAS/gorge proximity is not interpreted as affinity, inhibition or mechanism. An unsuccessful 100-ns MD attempt is reported without trajectory-derived conclusions, and experimental validation requirements are stated explicitly.
 
 We would value your view on whether this scope fits [JOURNAL], and whether the computational-only
 structure stage is acceptable alongside the screening audit.
@@ -28,14 +20,9 @@ Sincerely,
 
 尊敬的编辑：
 
-我们正在撰写一篇原创计算研究论文，题为《牙周炎相关口腔 sORF 肽的蛋白质组支持筛选：十二条金属结合、
-可过屏障候选多肽对接人乙酰胆碱酯酶致病性外周阴离子位点》。
+我们正在撰写一篇原创计算研究论文，题为《牙周炎相关小开放阅读框编码肽的蛋白质组支持筛选：具有预测金属结合、血脑屏障通透性和乙酰胆碱酯酶对接潜力的候选肽》。
 
-简述：牙周炎相关 sORF 库（296 个 MAG；24 健康对 26 牙周炎供体）经口腔蛋白质组塌缩（1170 万 → 33,786 条），
-再经 UniDL4BioPep（BBB）、NTxPred2、mebipred、AnOxPePred 过滤为 12 条（严格阈值 8 条）候选。十二条 7–9 肽
-的序列已随稿公开，并以 AutoDock Vina 1.2.5 对接人 AChE（PDB 4EY6），全部占据加速 Aβ 成纤的 PAS–峡部界面
-（−8.25 至 −9.60 kcal/mol）。本文明确设定边界：对接只排序、不认证；已尝试的 100 ns MD 核查如实报告为排除；
-实验验证为带终止规则的既定路线图。
+简述：来源于 296 个 MAG 的牙周炎相关 sORF 库经口腔蛋白质组匹配（1170 万 → 33,786 条），再经 UniDL4BioPep（BBB）、NTxPred2、mebipred 和 AnOxPePred 过滤为 12 条主候选（更严格聚合阈值下为 8 条）。稿件报告全部 12 条序列，并以 AutoDock Vina 1.2.5 对人 AChE（PDB 4EY6）开展 PAS 聚焦分析。−8.25 至 −9.60 kcal/mol 的结果仅作为集合内描述性构象排序；定性 PAS/峡部邻近关系不解释为亲和力、抑制作用或机制。100 ns MD 尝试未成功，文中不报告任何轨迹结论，并明确说明后续实验验证要求。
 
 恳请评估该范围是否适合贵刊，以及“纯计算的结构阶段 + 筛选审计”的组合是否可被接受。
 

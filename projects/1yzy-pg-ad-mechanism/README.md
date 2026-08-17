@@ -2,20 +2,22 @@
 
 本目录是 Arena 会话分支上的**独立研究文件夹**，不改动仓库 skills 目录。
 
-## 目录（v0.5 投稿包，与 Light-skills `arena/019ff377-light-skills` 规格对齐）
+## 目录（v0.6 SCI 排版终稿；v0.5 双语包继续归档）
 
 ```
 projects/1yzy-pg-ad-mechanism/
   README.md
-  VERSIONS.md                     # ★ 版本记录：v0.1–v0.5 + tag + 恢复方法
+  VERSIONS.md                     # ★ 版本记录：v0.1–v0.6 + tag + 恢复方法
   SHA256SUMS.txt                  # source-docs 哈希
   ARTIFACT_SHA256SUMS.txt         # 产物哈希
   manuscript/
-    manuscript_en.md              # 英文主稿（投稿用，8 节，43 条文献）
-    manuscript_zh.md              # 中文主稿（逐节对应）
-    manuscript_bilingual.md/.docx # 分节对照双语稿（脚本重建）
-    supplementary_tables_bilingual.md/.docx   # 补充表 S1–S5
-    references.bib                # BibTeX（43 条手稿文献的文档化超集）
+    manuscript_sci_final.md/.docx # v0.6 英文 SCI 排版终稿（42 条正文文献）
+    supplementary_tables_sci_final.md/.docx   # v0.6 英文补充表 S1–S5
+    manuscript_en.md              # v0.5 英文内容档案
+    manuscript_zh.md              # v0.5 中文内容档案
+    manuscript_bilingual.md/.docx # v0.5 分节对照双语稿
+    supplementary_tables_bilingual.md/.docx   # v0.5 双语补充表
+    references.bib                # BibTeX 文档化超集
     figures/                      # fig1–fig5（PDF 母版 + PNG 预览）
     sci_v04_en.md / sci_v03_en.md / bilingual-sci-review.md   # 历史版本存档
   references/verified_references.md   # 43 条核验状态（含两处纠错）
@@ -41,12 +43,13 @@ projects/1yzy-pg-ad-mechanism/
 | 引用核验（v0.4 新增） | `skills/04-K-Dense-AI-claude-scientific-writer/citation-management`（PubMed/PDB 逐条比对，见 `pipeline/01_skill_run_v04.md`） |
 | 中文降套话 | `skills/48-copaper-ai-chinese-de-aigc`（少四字套话、少段首“此外/因此”、断言降级） |
 
-## 当前主稿（投稿用 v0.5）
+## 当前主稿（投稿排版版 v0.6）
 
-- **英文主稿**：`manuscript/manuscript_en.md`；**中文主稿**：`manuscript/manuscript_zh.md`；**双语对照**：`manuscript/manuscript_bilingual.md/.docx`
-- 九阶段记录：`revision_v2/01–09`；质检汇总：`quality_reports/quality_summary.md`（当前确定性审计全部 PASS）
-- 投稿包：`submission/`（双语六件套 + 就绪清单）；选刊决定权归作者
-- v0.4 及更早（`sci_v04_en.md` 等）仅作历史存档，不要投稿
+- **英文 SCI 最终稿**：`manuscript/manuscript_sci_final.docx`（可编辑 Word）及同源 `manuscript_sci_final.md`。
+- **英文补充表**：`manuscript/supplementary_tables_sci_final.docx` 及同源 Markdown；主稿 5 表、补充 5 表均为标准三线表。
+- DOCX 采用 A4、Times New Roman、双倍行距、连续行号、页码、Vancouver 参考文献和匿名元数据；42 条正文文献全部被引用且均含 DOI。
+- 最终审计：`quality_reports/sci_final_audit.json`（内容、引用、OOXML 包和三线表规则全部 PASS）。
+- v0.5 中英双语主稿继续保留为内容档案；v0.4 及更早（`sci_v04_en.md` 等）不要投稿。
 
 ### v0.5 相对 v0.4 的变化（按 Light-skills 九阶段规格重构）
 
@@ -66,8 +69,8 @@ projects/1yzy-pg-ad-mechanism/
 
 ## Git
 
-- 工作分支：`arena/019ff3f9-auto-empirical-research-skills`（当前会话；旧分支 `arena/019ff371-…` 为 v0.1–v0.3 存档）
+- 工作分支：`arena/01a00dab-auto-empirical-research-skills`（v0.6 当前分支；旧分支只作历史归档）
 - **版本记录与 tag**：`VERSIONS.md`（tag 命名 `1yzy-manuscript-vX.Y`，恢复方法在内）
-- **拉我推上去的更新**：`scripts/SYNC.md`（每次生成后都用这个，不要重新 clone）
+- **同步代码**：`scripts/SYNC.md`；一键安全脚本：`scripts/sync_sci_v06.ps1`
 - 上传源稿：`scripts/UPLOAD.md`
-- 当前 tag：`1yzy-manuscript-v0.5`
+- 当前 tag：`1yzy-manuscript-v0.6`

@@ -27,7 +27,7 @@ Status key: **verified** = identifier resolved against PubMed/PDB this session; 
 | 20 | Guo Y, Nguyen KA, Potempa J. Periodontol 2000 2010;54:15-44 | 10.1111/j.1600-0757.2010.00377.x | standard |
 | 21 | Ryder MI. J Periodontol 2020;91(Suppl 1):S45-S49 | 10.1002/jper.20-0104 | standard |
 | 22 | Kanagasingam S, et al. J Alzheimers Dis Rep 2020;4:501-511 | 10.3233/adr-200250 | standard |
-| 23 | Frontiers in Aging Neuroscience 2026 (gingipains and AD stages) | 10.3389/fnagi.2026.1737524 | **flagged** — confirm author line on publisher PDF |
+| 23 | Li J, Lian T, Guo P, et al. Front Aging Neurosci 2026;18:1737524 (gingipains and AD stages) | 10.3389/fnagi.2026.1737524 | **verified 2026-08-17** — publisher citation and full author line confirmed |
 | 24 | Díaz-Zúñiga J, et al. Front Immunol 2020;11:588036 | 10.3389/fimmu.2020.588036 | standard |
 | 25 | Bush AI. J Alzheimers Dis 2013;33 Suppl 1:S277-S281 | 10.3233/jad-2012-129011 | standard |
 | 26 | Lei P, Ayton S, Bush AI. J Biol Chem 2021;296:100105 | 10.1074/jbc.rev120.008207 | verified (PMID 33219130) |
@@ -35,9 +35,9 @@ Status key: **verified** = identifier resolved against PubMed/PDB this session; 
 | 28 | Perini G, et al. Int J Biol Macromol 2019;141:278-289 | 10.1016/j.ijbiomac.2019.08.220 | **corrected 2026-08-12** — author table cited Sci Rep with an invalid s41598-019-48745-0 DOI; verified record is IJBMacromol, PMID 31470053 |
 | 29 | Chen SG, et al. Sci Rep 2016;6:34477 | 10.1038/srep34477 | standard |
 | 30 | Couso JP, Patra P. Curr Opin Genet Dev 2017;45:14-21 | 10.1016/j.gde.2017.04.002 | standard |
-| 31 | van Heesch S, et al. Cell 2019;178:236-251.e24 | 10.1016/j.cell.2019.05.010 | standard — full author line to be confirmed against Cell PDF |
+| 31 | van Heesch S, Witte F, Schneider-Lunitz V, et al. Cell 2019;178:242-260.e29 | 10.1016/j.cell.2019.05.010 | **verified 2026-08-17** — PubMed PMID 31155234; author line and pages corrected |
 | 32 | Du Z, et al. Brief Bioinform 2023;24:bbad135 | 10.1093/bib/bbad135 | standard |
-| 33 | Belstrøm D, et al. npj Biofilms Microbiomes 2021;7:76 | 10.1038/s41522-021-00247-y | standard |
+| 33 | Belstrøm D, Constancias F, Drautz-Moses DI, et al. npj Biofilms Microbiomes 2021;7:76 | 10.1038/s41522-021-00247-y | **verified 2026-08-17** — PubMed-indexed author line corrected |
 | 34 | Parmenter TJ, et al. Cancer Discov 2014;4:423-433 | 10.1158/2159-8290.cd-13-0440 | standard (archived GSE42872 context only; not an AD contrast) |
 | 35 | Trott O, Olson AJ. J Comput Chem 2010;31:455-461 | 10.1002/jcc.21334 | standard |
 | 36 | Eberhardt J, et al. J Chem Inf Model 2021;61:3891-3898 | 10.1021/acs.jcim.1c00203 | standard |

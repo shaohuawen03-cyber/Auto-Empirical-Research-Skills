@@ -1,6 +1,16 @@
 # Final quality summary / 最终质量汇总（v0.5）
 
 Date / 日期: 2026-08-12
+SCI final-format addendum / SCI 终稿排版增补: 2026-08-17
+
+## v0.6 SCI final-format addendum / v0.6 SCI 终稿排版增补
+
+- `manuscript/manuscript_sci_final.docx` and `supplementary_tables_sci_final.docx` are the current English submission-format files.
+- Main text: 5 genuine three-line tables and 42 sequential Vancouver references; all 42 are cited and include DOI strings. Supplement: 5 genuine three-line tables.
+- Placeholders and workflow-only prose were removed. Missing archived software/search metadata is disclosed as a reproducibility limitation rather than invented.
+- Reference fixes on 2026-08-17: Frontiers 2026 author line verified; van Heesch 2019 pages/author line corrected; Belstrøm 2021 author line corrected; the unrelated melanoma exclusion reference was removed from the submission bibliography.
+- Deterministic verdict: `quality_reports/sci_final_audit.json` = **PASS** for content inventory, citation coverage, OOXML integrity, anonymous metadata, line/page numbering, and all 10 three-line tables.
+- Boundary: this is a journal-neutral, blinded SCI manuscript format. Author identities, funding, conflicts, CRediT roles and target-journal-specific requirements still belong in the separate title page/submission portal; no absent scientific result was fabricated.
 
 ## Overall status / 总体状态
 
