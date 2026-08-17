@@ -1,13 +1,8 @@
-# 牙周炎相关口腔 sORF 肽的蛋白质组支持筛选：十二条金属结合、可过屏障候选多肽对接人乙酰胆碱酯酶致病性外周阴离子位点
-
-**文章类型：** 原创研究论文（计算筛选 + 结构层面跟进）  
-**稿件状态：** 面向投稿、供责任作者审核的科学内容草案。因未提供作者姓名、单位、通讯信息、期刊特定格式及经作者批准的声明，本稿不作推定或虚构补写。
-
 ## 摘要
 
 **背景：** 牙周炎与阿尔茨海默病（AD）存在流行病学关联，但多数分子机制叙述止步于完整牙龈卟啉单胞菌、牙龈蛋白酶或外膜囊泡。口腔小开放阅读框（sORF）编码的短肽是更大、却很少被清点的货物；乙酰胆碱酯酶（AChE）的外周阴离子位点（PAS）——加速 β-淀粉样肽（Aβ）纤毛组装的表面——从未被用于对这类肽进行分诊。
 
-**方法：** 我们再分析公开口腔宏基因组（BioProject PRJNA678453；组装集 PRJEB65451），包含来自 24 名健康对照与 26 名牙周炎患者的 296 个高质量宏基因组组装基因组（MAG）。组特异 sORF 库（4–50 氨基酸）经 HOMD 相关口腔蛋白质组精确匹配塌缩，用 UniDL4BioPep 以预测概率 ≥ 0.8 打分（短肽支 5–30 aa 与长肽支 31–50 aa 分开），再经 NTxPred2、mebipred 与 AnOxPePred 过滤。所得候选以 AutoDock Vina 1.2.5 对接到人 AChE（PDB 4EY6）PAS 为中心的 40 × 40 × 40 Å³ 盒子。
+**方法：** 我们再分析公开口腔宏基因组（BioProject PRJNA678453；组装集 PRJEB65451），包含 296 个高质量宏基因组组装基因组（MAG）。组特异 sORF 库（4–50 氨基酸）经 HOMD 相关口腔蛋白质组精确匹配塌缩，用 UniDL4BioPep 以预测概率 ≥ 0.8 打分（短肽支 5–30 aa 与长肽支 31–50 aa 分开），再经 NTxPred2、mebipred 与 AnOxPePred 过滤。所得候选以 AutoDock Vina 1.2.5 对接到人 AChE（PDB 4EY6）PAS 为中心的 40 × 40 × 40 Å³ 盒子。
 
 **结果：** 原始库含健康 11,269,961 条与牙周炎 11,721,988 条 sORF；蛋白质组支持后分别剩 31,510 与 33,786 条（通过率 0.2796% 与 0.2882%）。牙周炎组血脑屏障（BBB）阳性在两支均更多（短肽 3,446 对 3,359；长肽 72 对 40）。3,518 条 BBB 阳性肽中，NTxPred2 对 3,299 条打分序列判出 923 条神经毒性，mebipred 标出 111 条 Cu/Fe/Zn 结合阳性，"螯合高/清除低"规则留下主候选 12 条（严格阈值下 8 条）。十二条均为 7–9 肽：11 条含组氨酸、6 条含半胱氨酸，与 tau26–44 等金属结合神经毒肽范例的 His/Cys 锚定化学一致。所有候选完整进入 PAS 中心盒子，Vina 打分 −8.25 至 −9.60 kcal/mol，呈跨越峡部的结合模式，接触 PAS 残基（Tyr72、Asp74、Tyr124、Trp286、Tyr341）与峡部芳香残基（Trp86、Phe295、Tyr337、Phe338）；部分侧链延伸至 Ser203/His447 催化区。
 
@@ -238,70 +233,4 @@ BBB 概率 ≥ 0.8 时，短肽支为健康 3,359 条、牙周炎 3,446 条（�
 
 采纳作者的前进方案，压缩如下。**（i）肽结构。** 对 7–9 肽做多构象建模而非单一静态结构；用 AlphaFold3 [42] 做肽–蛋白与肽–金属复合物建模，作为参考框架，经构象采样、置信指标与 MD 验证——不能替代实验结构。**（ii）靶点面板。** PAS 之外：AChE CAS 与 344–361 Aβ 驻留区，再及 BChE、Aβ42、tau、ApoE4、铁蛋白与转铁蛋白——Aβ/tau 靶点检验对病理性聚集或构象稳定性的影响；铁蛋白/转铁蛋白检验与铁稳态机制的交互。**（iii）金属。** Cu²⁺、Fe²⁺/Fe³⁺、Zn²⁺：对接与结构建模筛查配位构象；MD 分析金属–配体距离、配位数与稳定性；MM/GBSA 或 MM/PBSA 做相对结合自由能比较 [43]；仅对稳定配位壳层做 QM/MM 或 DFT，分析几何、配位能、电荷分布与可能的电子转移特征。**（iv）对接升级。** 待参数体系与柔性采样完全掌握后改用 Rosetta FlexPepDocking [37]；本阶段 Vina 为经验证的过渡。**（v）MD。** 在修复 Z 轴压力不稳定（压缩率/τ_p 松弛梯度、断裂环段 ACE/NME 封端、肽去碰撞）后，按 100 ns AChE–Aβ 方案 [9] 于 GROMACS [38] 执行。**（vi）湿实验验证级联。** 金属结合（ITC/光谱）、Cu/Fe 依赖 ROS、脂质过氧化、AChE/BChE 活性、Aβ 聚集与神经元活力——终止规则：只有金属条件下 ROS/脂质过氧化升高并伴随神经元损伤，才支持"金属相关促氧化神经毒性"的表述。
 
-## 5 结论
-
-一次牙周炎相关、蛋白质组支持的 sORF 筛选，经预测 BBB 通过、Cu/Fe/Zn 结合与"螯合高/清除低"过滤，产出十二条 7–9 残基候选，其序列已随本稿公开。对人 AChE（4EY6）的 PAS 聚焦对接显示：十二条全部物理占据 PAS–峡部界面，Vina 打分 −8.25 至 −9.60 kcal/mol，残基接触与酶的 Aβ 加速表面重叠。该结果是一个有排序、结构上合理的候选名单，服务于牙周炎–AD 关联的金属假说——仅此而已。升级路径同样清楚：多构象肽模型、完整靶点面板、显式金属配位、压力稳定性修复后的生产 MD，以及带终止规则的湿实验级联。当这些实验开口说话时，这十二个名字要么成为十二个假说，要么作为十二个体面的阴性退役。无论哪种，都好过一份未被清点的肽组。
-
-## 声明
-
-**数据可用性。** PRJNA678453、PRJEB65451、PXD003151、PXD004319、PXD026727 与 HOMD 为公开数据；PDB 4EY6 公开 [8]。十二条候选序列见表 5。作者筛选表存于项目 `source-docs/` 目录。
-
-**代码可用性。** 图形与审计脚本存于项目 `scripts/` 目录。UniDL4BioPep 见 Du 等 [32]；AutoDock Vina 见 Trott 与 Olson [35] 及 Eberhardt 等 [36]。
-
-**伦理。** 未进行新的人体或动物实验；再分析使用公开、去标识化的组装数据。
-
-**利益冲突。** 未记录（`AUTHOR_INPUT_NEEDED`）。
-
-**经费。** 未记录（`AUTHOR_INPUT_NEEDED`）。
-
-**作者贡献。** `AUTHOR_INPUT_NEEDED`（CRediT）。
-
-**AI 使用。** AI 助手在文档化的技能路由工作流下，由作者的方法/结果草案组装本稿，并对新增引用逐条核验 PubMed/PDB 记录（见项目溯源日志）。作者对每个数字与论断负责。
-
-**统计分析。** 独立实验单位为供体（健康 n = 24；牙周炎 n = 26）。肽计数为嵌套观测。描述性统计为长度支内蛋白质组支持肽的计数与百分比。肽水平 2 × 2 表的双侧 Fisher 精确检验为探索性（SciPy 1.17），未对 UniDL4BioPep 各类别做多比较校正。因未存档供体×肽矩阵，未拟合供体水平混合模型。对接打分（表 5）以 mean ± SD 报告；集合内排序未做推断统计。源稿未说明 UniDL4BioPep、NTxPred2、mebipred、AnOxPePred 的软件版本与对接搜索参数。
-
 ## 参考文献
-
-1. Scheltens P, De Strooper B, Kivipelto M, Holstege H, Chételat G, Teunissen CE, et al. Alzheimer's disease. Lancet. 2021;397(10284):1577-1590. doi:10.1016/S0140-6736(20)32205-4
-2. Selkoe DJ, Hardy J. The amyloid hypothesis of Alzheimer's disease at 25 years. EMBO Mol Med. 2016;8(6):595-608. doi:10.15252/emmm.201606210
-3. Hampel H, Mesulam MM, Cuello AC, Farlow MR, Giacobini E, Grossberg GT, et al. The cholinergic system in the pathophysiology and treatment of Alzheimer's disease. Brain. 2018;141(7):1917-1933. doi:10.1093/brain/awy132
-4. Inestrosa NC, Alvarez A, Pérez CA, Moreno RD, Vicente M, Linker C, et al. Acetylcholinesterase accelerates assembly of amyloid-β-peptides into Alzheimer's fibrils: possible role of the peripheral site of the enzyme. Neuron. 1996;16(4):881-891. doi:10.1016/s0896-6273(00)80108-7
-5. De Ferrari GV, Canales MA, Shin I, Weiner LM, Silman I, Inestrosa NC. A structural motif of acetylcholinesterase that promotes amyloid β-peptide fibril formation. Biochemistry. 2001;40(35):10447-10457. doi:10.1021/bi0101392
-6. Bartolini M, Bertucci C, Cavrini V, Andrisano V. β-Amyloid aggregation induced by human acetylcholinesterase: inhibition studies. Biochem Pharmacol. 2003;65(3):407-416. doi:10.1016/s0006-2952(02)01514-9
-7. Kryger G, Silman I, Sussman JL. Structure of acetylcholinesterase complexed with E2020 (Aricept): implications for the design of new anti-Alzheimer drugs. Structure. 1999;7(3):297-307. doi:10.1016/s0969-2126(99)80040-9
-8. Cheung J, Rudolph MJ, Burshteyn F, Cassidy MS, Gary EN, Love J, et al. Structures of human acetylcholinesterase in complex with pharmacologically important ligands. J Med Chem. 2012;55(23):10282-10286. doi:10.1021/jm300871x
-9. Atanasova M, Dimitrov I, Ivanov S. Molecular dynamics simulations of acetylcholinesterase – beta-amyloid peptide complex. Cybern Inf Technol. 2020;20(6):140-154. doi:10.2478/cait-2020-0068
-10. Lushchekina SV, Kots ED, Novichkova DA, Petrov KA, Masson P. Role of acetylcholinesterase in β-amyloid aggregation studied by accelerated molecular dynamics. BioNanoScience. 2017;7:396-402. doi:10.1007/s12668-016-0375-x
-11. Ide M, Harris M, Stevens A, Sussams R, Hopkins V, Culliford D, et al. Periodontitis and cognitive decline in Alzheimer's disease. PLoS One. 2016;11(3):e0151081. doi:10.1371/journal.pone.0151081
-12. Sparks Stein P, Desrosiers M, Donegan SJ, Yepes JF, Kryscio RJ. Tooth loss, dementia and neuropathology in the Nun study. J Am Dent Assoc. 2007;138(10):1314-1322. doi:10.14219/jada.archive.2007.0046
-13. Jiang Z, Shi Y, Zhao W, Zhou L, Zhang B, Xie Y, et al. Association between chronic periodontitis and the risk of Alzheimer's disease: combination of text mining and GEO dataset. BMC Oral Health. 2021;21:466. doi:10.1186/s12903-021-01827-2
-14. Dominy SS, Lynch C, Ermini F, Benedyk M, Marczyk A, Konradi A, et al. Porphyromonas gingivalis in Alzheimer's disease brains: evidence for disease causation and treatment with small-molecule inhibitors. Sci Adv. 2019;5(1):eaau3333. doi:10.1126/sciadv.aau3333
-15. Poole S, Singhrao SK, Kesavalu L, Curtis MA, Crean S. Determining the presence of Porphyromonas gingivalis in Alzheimer's disease brain. J Alzheimers Dis. 2013;33(3):665-678. doi:10.3233/JAD-2012-121149
-16. Ilievski V, Zuchowska PK, Green SJ, Toth PT, Ragozzino ME, Le K, et al. Chronic oral application of a periodontal pathogen results in brain inflammation, neurodegeneration and amyloid beta production in wild type mice. PLoS One. 2018;13(10):e0204941. doi:10.1371/journal.pone.0204941
-17. Haditsch U, Roth T, Rodriguez L, Hancock S, Cecere T, Nguyen M, et al. Alzheimer's disease-like neurodegeneration in Porphyromonas gingivalis infected neurons with persistent expression of active gingipains. J Alzheimers Dis. 2020;75(4):1361-1376. doi:10.3233/JAD-200393
-18. Ho MH, Chen CH, Goodwin JS, Wang BY, Xie H. Functional advantages of Porphyromonas gingivalis vesicles. PLoS One. 2015;10(4):e0123448. doi:10.1371/journal.pone.0123448
-19. Nara PL, Sindelar D, Penn MS, Potempa J, Griffin WST. Porphyromonas gingivalis outer membrane vesicles as the major driver of and explanation for neuropathogenesis, the cholinergic hypothesis, iron dyshomeostasis, and salivary lactoferrin in Alzheimer's disease. J Alzheimers Dis. 2021;82(4):1417-1450. doi:10.3233/JAD-210448
-20. Guo Y, Nguyen KA, Potempa J. Dichotomy of gingipains action as virulence factors: from cleaving substrates with the precision of a surgeon's knife to a meat chopper-like brutal degradation of proteins. Periodontol 2000. 2010;54(1):15-44. doi:10.1111/j.1600-0757.2010.00377.x
-21. Ryder MI. Porphyromonas gingivalis and Alzheimer disease: recent findings and potential therapies. J Periodontol. 2020;91(Suppl 1):S45-S49. doi:10.1002/JPER.20-0104
-22. Kanagasingam S, Chukkapalli SS, Welbury R, Singhrao SK. Porphyromonas gingivalis is a strong risk factor for Alzheimer's disease. J Alzheimers Dis Rep. 2020;4(1):501-511. doi:10.3233/ADR-200250
-23. Frontiers in Aging Neuroscience. Different stages of Alzheimer's disease with periodontitis: clinical features and potential mechanisms involving gingipains. 2026. doi:10.3389/fnagi.2026.1737524. Confirm author line on the publisher PDF before submission.
-24. Díaz-Zúñiga J, More J, Melgar-Rodríguez S, Jiménez-Unión M, Villalobos-Orchard F, Muñoz-Manríquez C, et al. Alzheimer's disease-like pathology triggered by Porphyromonas gingivalis in wild type rats is serotype dependent. Front Immunol. 2020;11:588036. doi:10.3389/fimmu.2020.588036
-25. Bush AI. The metal theory of Alzheimer's disease. J Alzheimers Dis. 2013;33 Suppl 1:S277-281. doi:10.3233/JAD-2012-129011
-26. Lei P, Ayton S, Bush AI. The essential elements of Alzheimer's disease. J Biol Chem. 2021;296:100105. doi:10.1074/jbc.REV120.008207
-27. Di Natale G, Bellia F, Sciacca MFM, Campagna T, Pappalardo G. Tau-peptide fragments and their copper(II) complexes: effects on amyloid-β aggregation. Inorg Chim Acta. 2018;472:82-92. doi:10.1016/j.ica.2017.09.061
-28. Perini G, Ciasca G, Minelli E, Papi M, Palmieri V, Maulucci G, et al. Dynamic structural determinants underlie the neurotoxicity of the N-terminal tau 26-44 peptide in Alzheimer's disease and other human tauopathies. Int J Biol Macromol. 2019;141:278-289. doi:10.1016/j.ijbiomac.2019.08.220
-29. Chen SG, Stribinskis V, Rane MJ, Gozal D, Friedland RP. Exposure to the functional bacterial amyloid protein curli enhances alpha-synuclein aggregation in aged Fischer 344 rats and Caenorhabditis elegans. Sci Rep. 2016;6:34477. doi:10.1038/srep34477
-30. Couso JP, Patra P. Short ORFs: finding gems in hidden places. Curr Opin Genet Dev. 2017;45:14-21. doi:10.1016/j.gde.2017.04.002
-31. van Heesch S, Wit F, Botter J, Brakel J, et al. The translational landscape of the human heart. Cell. 2019;178(1):236-251.e24. doi:10.1016/j.cell.2019.05.010
-32. Du Z, Ding X, Xu Y, Li Y. UniDL4BioPep: a universal deep learning architecture for binary classification in peptide bioactivity. Brief Bioinform. 2023;24(3):bbad135. doi:10.1093/bib/bbad135
-33. Belstrøm D, Constancias F, Markvart M, Sikora M, Sørensen CE, Givskov M. Periodontitis associates with species-specific gene expression of the oral microbiota. npj Biofilms Microbiomes. 2021;7:76. doi:10.1038/s41522-021-00247-y
-34. Parmenter TJ, Kleinschmidt M, Kinross KM, Bond ST, Li J, Kaadige MR, et al. Response of BRAF-mutant melanoma to BRAF inhibition is mediated by a network of transcriptional regulators of glycolysis. Cancer Discov. 2014;4(4):423-433. doi:10.1158/2159-8290.CD-13-0440
-35. Trott O, Olson AJ. AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading. J Comput Chem. 2010;31(2):455-461. doi:10.1002/jcc.21334
-36. Eberhardt J, Santos-Martins D, Tillack AF, Forli S. AutoDock Vina 1.2.0: new docking methods, expanded force field, and Python bindings. J Chem Inf Model. 2021;61(8):3891-3898. doi:10.1021/acs.jcim.1c00203
-37. London N, Raveh B, Cohen E, Fathi G, Schueler-Furman O. Rosetta FlexPepDock web server—high resolution modeling of peptide–protein interactions. Nucleic Acids Res. 2011;39(Web Server issue):W249-W253. doi:10.1093/nar/gkr326
-38. Abraham MJ, Murtola T, Schulz R, Páll S, Smith JC, Hess B, et al. GROMACS: high performance molecular simulations through multi-level parallelism from laptops to supercomputers. SoftwareX. 2015;1-2:19-25. doi:10.1016/j.softx.2015.06.001
-39. Hornak V, Abel R, Okur A, Strockbine R, Roitberg A, Simmerling C. Comparison of multiple Amber force fields and development of improved protein backbone parameters. Proteins. 2006;65(3):712-725. doi:10.1002/prot.21123
-40. Jorgensen WL, Chandrasekhar J, Madura JD, Impey RW, Klein ML. Comparison of simple potential functions for simulating liquid water. J Chem Phys. 1983;79(2):926-935. doi:10.1063/1.445869
-41. Berendsen HJC, Postma JPM, van Gunsteren WF, DiNola A, Haak JR. Molecular dynamics with coupling to an external bath. J Chem Phys. 1984;81(8):3684-3690. doi:10.1063/1.448118
-42. Abramson J, Adler J, Dunger J, Evans R, Green T, et al. Accurate structure prediction of biomolecular interactions with AlphaFold 3. Nature. 2024;630(8016):493-500. doi:10.1038/s41586-024-07487-w
-43. Genheden S, Ryde U. The MM/PBSA and MM/GBSA methods to estimate ligand-binding affinities. Expert Opin Drug Discov. 2015;10(5):449-461. doi:10.1517/17460441.2015.1032936

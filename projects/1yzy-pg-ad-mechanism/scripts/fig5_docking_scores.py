@@ -52,12 +52,12 @@ ax.text(len(DATA) - 0.45, -7.93, "-8.0 kcal/mol reference",
 ax.tick_params(axis="y", labelsize=8.5)
 for spine in ("top", "right"):
     ax.spines[spine].set_visible(False)
-ax.set_title("PAS-focused docking against human AChE (PDB 4EY6)",
-             fontsize=10, loc="left", pad=10)
+ax.set_title("")
 fig.tight_layout()
 
 out = Path(__file__).resolve().parent.parent / "manuscript" / "figures"
 out.mkdir(parents=True, exist_ok=True)
 fig.savefig(out / "fig5_docking_scores.pdf")
 fig.savefig(out / "fig5_docking_scores.png", dpi=300)
-print("saved:", out / "fig5_docking_scores.pdf")
+fig.savefig(out / "fig5_docking_scores.svg", format="svg", bbox_inches="tight", pad_inches=0.15)
+print("saved svg/pdf/png")
